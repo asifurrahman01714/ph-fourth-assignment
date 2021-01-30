@@ -88,6 +88,7 @@ nav ul li a:hover, a.active{
     background: #F3F5FF;
     border-radius: 4px;
     margin: 10px 0;
+    text-align: right;
 }
 .booking-form .inputs{
     display: grid;
@@ -119,4 +120,16 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+.btn{
+    border: none;
+    color: blue;
+    background-color: white;
+    font-size: 20px;
+}
+.btn:focus{
+    border-color: white;
+}
+.fa-plus:before {
+    content: "\f067";
 }
