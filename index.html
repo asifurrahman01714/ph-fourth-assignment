@@ -31,93 +31,128 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+    <main>
+        <section id="details" class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
                         <input class="inp-style" type="date" name="">
-                </div>
-                <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="firstClassInput" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <button class="btn"><i onclick="ticketHandle('firstClass', false)"
-                            class="fas fa-minus"></i></button>
-                    <button class="btn"><i onclick="ticketHandle('firstClass',true)" class="fas fa-plus"></i></button>
-
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <input id="economyInput" class="inp-style inp-width" type="number" name="" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <!-- <p> <span>+</span> <span>-</span> </p> -->
-                    <button class="btn"><i onclick="ticketHandle('economy', false)"
-                        class="fas fa-minus"></i></button>
-                <button class="btn"><i onclick="ticketHandle('economy',true)" class="fas fa-plus"></i></button>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
                     </div>
-                    <div class="right">
-                        <h5>$ <span id="subTotal">500</span></h5>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClassInput" class="inp-style inp-width" type="number" name="" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button class="btn"><i onclick="ticketHandle('firstClass', false)"
+                                class="fas fa-minus"></i></button>
+                        <button class="btn"><i onclick="ticketHandle('firstClass',true)"
+                                class="fas fa-plus"></i></button>
+
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economyInput" class="inp-style inp-width" type="number" name="" value="0">
                     </div>
-                    <div class="right">
-                        <h5>$ <span id="tax">50</span></h5>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <h5>$ <span id="total">550</span></h5>
+                    <div class="plus-minus-btn">
+                        <!-- <p> <span>+</span> <span>-</span> </p> -->
+                        <button class="btn"><i onclick="ticketHandle('economy', false)"
+                                class="fas fa-minus"></i></button>
+                        <button class="btn"><i onclick="ticketHandle('economy',true)" class="fas fa-plus"></i></button>
                     </div>
                 </div>
-            </div>
-            <button class="btn-style" onclick="bookNow()">Book Now</button>
-        </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <h5>$ <span id="subTotal">500</span></h5>
+                        </div>
+                    </div>
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <h5>$ <span id="tax">50</span></h5>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <h5>$ <span id="total">550</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-style" onclick="bookNow()">Book Now</button>
+            </div>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                    veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
+                    nobise
+                    voluptatibus quam</p>
+            </div>
         </section>
 
-        <script src="script.js"></script>
-        <!--Thank You-->
+        <section id="confirmation">
+            <h1>Congratulations!!</h1>
+            <h3>You are buying these tickets</h3>
+            <table>
+                <tr>
+                    <th>Ticket Name</th>
+                    <th>Total pieces</th>
+                    <th>Total price</th>
+                </tr>
+                <tr>
+                    <td>First - Class :</td>
+                    <td><span id="firstClassPieces">0</span> pieces</td>
+                    <td>$ <span id="firstClassPrice">0</span></td>
+                </tr>
+                <tr>
+                    <td>Economy :</td>
+                    <td><span id="economyPieces">0</span> pieces</td>
+                    <td>$ <span id="economyClassPrice">0</span></td>
+                </tr>
+
+                <tr>
+                    <td>Total :</td>
+                    <td><span id="totalPieces">0</span> pieces</td>
+                    <td>$ <span id="totalPrice">0</span> (With 10% Tax)</td>
+                </tr>
+
+            </table>
+            <button type="submit" class="submit"><a href="thankYou.html"> Submit </a></button>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!--Thank You-->
 </body>
 
 </html>
