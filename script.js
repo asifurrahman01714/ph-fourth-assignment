@@ -41,6 +41,8 @@ function ticketInput(product) {
     return ticketCount;
 }
 
+
+//The code of my extra part .
 function bookNow() {
     const details = document.getElementById('details');
     details.style.display = "none";
